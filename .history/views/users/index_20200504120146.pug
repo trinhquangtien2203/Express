@@ -1,0 +1,8 @@
+Users
+a(href="/users/create") Create user
+form(action="/users/search",method="GET")
+    input(type="text",name='q',value=text)
+    button search
+ul
+    each val,index in users
+        li= val.name
